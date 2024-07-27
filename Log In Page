@@ -1,1 +1,41 @@
-
+<section class="flex justify-center items-center px-16 py-20 bg-slate-100 max-md:px-5">
+  <main class="flex flex-col px-9 py-11 mt-24 max-w-full bg-white rounded-xl shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[396px] max-md:px-5 max-md:mt-10">
+    <header class="flex gap-2.5 justify-center self-center px-2.5 py-0.5 mt-3 max-md:px-5">
+      <div class="flex justify-center items-center p-2.5 my-auto w-14 h-14 bg-red-500 rounded-[100px]">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b5ff10a577f0394a838b0abd70fc7936bfc569006cc26aa44d9f61d5d4ef53b5?apiKey=3dd0e0084c4449128228f5cac3303c63&&apiKey=3dd0e0084c4449128228f5cac3303c63" alt="" class="rounded aspect-[2.08] w-[27px]" />
+      </div>
+      <h1 class="flex flex-col py-3.5 pr-2.5 text-3xl font-medium text-red-500 rounded-none">
+        <span>Better</span>
+        <span class="mt-2.5">Kennel</span>
+      </h1>
+    </header>
+    <p class="self-center px-2.5 pt-2.5 mt-6 max-w-full text-sm text-center text-neutral-700 w-[195px]">
+      <span class="text-base font-medium leading-6 text-neutral-700">Welcome Back!</span>
+      <br />
+      <br />
+      <span class="text-base font-medium leading-6 text-neutral-700">Login to your account</span>
+    </p>
+    <form>
+      <div class="flex gap-2.5 items-start py-3 mt-6 text-sm font-medium rounded border border-solid border-neutral-700 border-opacity-90 text-zinc-800 text-opacity-50">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fe80f4dfae0c75a30914dc5b96d525095532dfd0ca0f8b38dc007593dc6be4df?apiKey=3dd0e0084c4449128228f5cac3303c63&&apiKey=3dd0e0084c4449128228f5cac3303c63" alt="" class="shrink-0 self-start ml-4 w-5 aspect-[1.11]" />
+        <label for="email" class="flex-auto my-auto ml-4">Email *</label>
+        <input type="email" id="email" class="sr-only" required />
+      </div>
+      <div class="flex gap-4 items-start py-3 mt-4 rounded border border-solid border-neutral-700 border-opacity-90">
+        <div class="flex justify-center items-center self-start">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3fad023b3395204c2dc7dabc1dda4a2feba4033fab339726661d0992661579a1?apiKey=3dd0e0084c4449128228f5cac3303c63&&apiKey=3dd0e0084c4449128228f5cac3303c63" alt="" class="ml-4 aspect-square w-[19px]" />
+        </div>
+        <label for="password" class="flex-auto my-auto ml-4 text-sm font-medium text-zinc-800 text-opacity-50">Password *</label>
+        <input type="password" id="password" class="sr-only" required />
+      </div>
+      <a href="#" class="block self-end mt-3 text-sm text-center text-red-500">Recover Password</a>
+<a href="#" class="block self-end mt-3 text-sm text-center text-red-500">Recover Password</a>
+      <p class="self-center mt-10 text-sm text-center text-red-500">
+        Don't have an account? <a href="#" class="text-red-500">Sign Up</a>
+      </p>
+      <button type="submit" class="px-4 py-3 mt-10 mb-2.5 text-lg font-medium text-center text-white whitespace-nowrap bg-red-500 rounded-xl w-full">
+        Login
+      </button>
+    </form>
+  </main>
+</section>
