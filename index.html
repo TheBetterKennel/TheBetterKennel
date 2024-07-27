@@ -42,69 +42,65 @@
             </div>
           </div>
         </div>
-        <div class="login-form-container">
-          <div class="frame-group">
-            <div class="welcome-back-login-to-your-ac-wrapper">
+        <div class="login-form-wrapper">
+          <div class="login-form">
+            <div class="form-title">
               <div class="welcome-back-login-container">
                 <p class="welcome-back">Welcome Back!</p>
                 <p class="blank-line">&nbsp;</p>
                 <p class="login-to-your">Login to your account</p>
               </div>
             </div>
-            <div class="input-fields-parent">
-              <div class="input-fields">
-                <div class="message-email" id="messageEmailContainer">
-                  <div class="password-icon">
-                    <img
-                      class="message-icon"
-                      alt=""
-                      src="./public/message.svg"
-                    />
-                  </div>
-                  <input class="email" placeholder=" Email *" type="text" />
+            <div class="input-fields">
+              <div class="email-password" id="emailPasswordContainer">
+                <div class="message-icon">
+                  <img
+                    class="message-icon1"
+                    alt=""
+                    src="./public/message.svg"
+                  />
                 </div>
-                <div class="message-email1">
-                  <div class="password-parent">
-                    <div class="password">Password *</div>
-                    <img
-                      class="lock-icon"
-                      loading="lazy"
-                      alt=""
-                      src="./public/lock.svg"
-                    />
-
-                    <img
-                      class="iconlylightpassword"
-                      loading="lazy"
-                      alt=""
-                      src="./public/iconlylightpassword.svg"
-                    />
-                  </div>
-                  <input class="password-hide-and-see" type="checkbox" />
-                </div>
+                <input class="email" placeholder=" Email *" type="text" />
               </div>
+              <div class="email-input">
+                <img
+                  class="iconlylightpassword"
+                  alt=""
+                  src="./public/iconlylightpassword.svg"
+                />
+
+                <input
+                  class="email-input-child"
+                  placeholder="Password *"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="recover-password-wrapper">
               <div class="recover-password" id="recoverPasswordText">
                 Recover Password
               </div>
             </div>
           </div>
         </div>
-        <div class="dont-have-an-account-sign-up-wrapper">
-          <div class="dont-have-an-container" id="dontHaveAn">
-            <span>Don’t have an account? </span>
-            <span class="sign-up">Sign Up</span>
+        <div class="frame-group">
+          <div class="dont-have-an-account-sign-up-wrapper">
+            <div class="dont-have-an-container" id="dontHaveAn">
+              <span>Don’t have an account? </span>
+              <span class="sign-up">Sign Up</span>
+            </div>
           </div>
+          <button class="buttons">
+            <div class="login1">Login</div>
+          </button>
         </div>
-        <button class="buttons">
-          <div class="login1">Login</div>
-        </button>
       </div>
     </div>
 
     <script>
-      var messageEmailContainer = document.getElementById("messageEmailContainer");
-      if (messageEmailContainer) {
-        messageEmailContainer.addEventListener("click", function (e) {
+      var emailPasswordContainer = document.getElementById("emailPasswordContainer");
+      if (emailPasswordContainer) {
+        emailPasswordContainer.addEventListener("click", function (e) {
           // Please sync "Login" to the project
         });
       }
