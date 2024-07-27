@@ -22,14 +22,17 @@ body {
   --color-darkslategray-100: rgba(49, 54, 57, 0.9);
 
   /* Gaps */
-  --gap-base: 16px;
+  --gap-5xl: 24px;
 
   /* Paddings */
   --padding-230xl: 249px;
   --padding-xl: 20px;
   --padding-105xl: 124px;
-  --padding-7xs-5: 5.5px;
+  --padding-43xl: 62px;
+  --padding-2xs-5: 10.5px;
   --padding-sm: 14px;
+  --padding-11xs: 2px;
+  --padding-4xs: 9px;
   --padding-3xs: 10px;
 
   /* Border radiuses */
