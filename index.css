@@ -1,0 +1,379 @@
+.shape-icon {
+  width: 26.7px;
+  height: 13.3px;
+  position: relative;
+  border-radius: 3px;
+}
+.frame-wrapper,
+.shape-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.shape-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  background-color: var(--color-indianred-100);
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.frame-wrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0 0;
+}
+.better,
+.kennel {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 103px;
+  flex-shrink: 0;
+}
+.kennel {
+  min-width: 113px;
+}
+.kennel-wrapper {
+  height: 34px;
+  flex-direction: row;
+  padding: 0;
+  box-sizing: border-box;
+}
+.better-parent,
+.container-inner,
+.frame-parent,
+.kennel-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.better-parent {
+  flex: 1;
+  flex-direction: column;
+}
+.container-inner,
+.frame-parent {
+  flex-direction: row;
+}
+.frame-parent {
+  flex: 1;
+  gap: 10px;
+}
+.container-inner {
+  align-self: stretch;
+  padding: 0 74px;
+  text-align: left;
+}
+.welcome-back {
+  margin: 0;
+  font-weight: 500;
+}
+.blank-line {
+  margin: 0;
+  font-size: var(--paragraph-2-regular-size);
+  font-family: var(--paragraph-2-regular);
+}
+.login-to-your {
+  margin: 0;
+  font-weight: 500;
+}
+.welcome-back-login-container {
+  position: relative;
+}
+.welcome-back-login-to-your-ac-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 62px;
+}
+.message-icon {
+  width: 20px;
+  height: 18px;
+  position: relative;
+}
+.password-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0 0;
+}
+.email {
+  width: 102px;
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-family: var(--font-athiti);
+  font-size: var(--paragraph-2-regular-size);
+  background-color: transparent;
+  height: 22px;
+  position: relative;
+  color: rgba(50, 50, 50, 0.45);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.message-email {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  border: 1.3px solid var(--color-darkslategray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7px 4px 9px;
+  gap: 10.5px;
+  cursor: pointer;
+}
+.password {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 69px;
+}
+.iconlylightpassword,
+.lock-icon {
+  position: absolute;
+  margin: 0 !important;
+}
+.lock-icon {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.iconlylightpassword {
+  height: 24px;
+  width: 24px;
+  top: calc(50% - 12px);
+  left: -23.5px;
+  z-index: 2;
+}
+.password-parent {
+  margin-top: -38px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 38px 13px;
+  position: relative;
+  flex-shrink: 0;
+}
+.password-hide-and-see {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.input-fields,
+.message-email1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.message-email1 {
+  height: 42px;
+  border-radius: var(--br-9xs);
+  border: 1.3px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-3xs) 26px 12px;
+  gap: 221px;
+}
+.input-fields {
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.recover-password {
+  position: relative;
+  font-family: var(--paragraph-2-regular);
+  color: var(--color-indianred-100);
+  text-align: center;
+  display: inline-block;
+  min-width: 123px;
+  cursor: pointer;
+}
+.input-fields-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 12px;
+  text-align: left;
+  font-size: var(--paragraph-2-regular-size);
+  color: rgba(50, 50, 50, 0.5);
+  font-family: var(--font-athiti);
+}
+.frame-group,
+.login-form-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-group {
+  flex: 1;
+  flex-direction: column;
+  gap: 33px;
+}
+.login-form-container {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-sm) var(--padding-7xs-5);
+  font-size: var(--font-size-base);
+  color: #313639;
+}
+.sign-up {
+  color: var(--color-indianred-100);
+}
+.dont-have-an-container {
+  position: relative;
+  cursor: pointer;
+}
+.dont-have-an-account-sign-up-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 58px var(--padding-7xs-5);
+  font-size: var(--paragraph-2-regular-size);
+  color: #8b8d97;
+  font-family: var(--paragraph-2-regular);
+}
+.login1 {
+  flex: 1;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+}
+.buttons,
+.container,
+.login {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttons {
+  cursor: pointer;
+  border: 0;
+  padding: 10.5px 16px;
+  background-color: var(--color-indianred-100);
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  flex-direction: row;
+}
+.buttons:hover {
+  background-color: #e86161;
+}
+.container,
+.login {
+  box-sizing: border-box;
+}
+.container {
+  width: 396px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: 87.5px 34px 86px;
+  gap: 34.5px;
+  max-width: 100%;
+}
+.login {
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  background-color: #f4f5fa;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 180px 499px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-indianred-100);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .login {
+    padding-left: var(--padding-230xl);
+    padding-right: var(--padding-230xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .better,
+  .kennel {
+    font-size: var(--font-size-7xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .container,
+  .login {
+    box-sizing: border-box;
+  }
+  .container {
+    padding-top: 57px;
+    padding-bottom: 56px;
+  }
+  .login {
+    padding-left: var(--padding-105xl);
+    padding-right: var(--padding-105xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .better,
+  .kennel {
+    font-size: var(--font-size-lgi);
+  }
+  .container-inner,
+  .welcome-back-login-to-your-ac-wrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .message-email1 {
+    gap: 110px;
+  }
+  .frame-group {
+    gap: var(--gap-base);
+  }
+  .dont-have-an-account-sign-up-wrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .container {
+    gap: 17px;
+  }
+  .login {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
