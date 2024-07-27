@@ -40,6 +40,13 @@
 .kennel {
   min-width: 113px;
 }
+.better-parent,
+.frame-parent,
+.kennel-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .kennel-wrapper {
   height: 34px;
   flex-direction: row;
@@ -47,28 +54,21 @@
   box-sizing: border-box;
 }
 .better-parent,
-.container-inner,
-.frame-parent,
-.kennel-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.better-parent {
+.frame-parent {
   flex: 1;
   flex-direction: column;
 }
-.container-inner,
 .frame-parent {
   flex-direction: row;
-}
-.frame-parent {
-  flex: 1;
   gap: 10px;
 }
 .container-inner {
   align-self: stretch;
-  padding: 0 74px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 56px var(--padding-2xs-5);
   text-align: left;
 }
 .welcome-back {
@@ -87,25 +87,25 @@
 .welcome-back-login-container {
   position: relative;
 }
-.welcome-back-login-to-your-ac-wrapper {
+.form-title {
   align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 62px;
+  padding: 0 var(--padding-43xl) var(--padding-4xs);
 }
-.message-icon {
+.message-icon1 {
   width: 20px;
   height: 18px;
   position: relative;
 }
-.password-icon {
+.message-icon {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 2px 0 0;
+  padding: var(--padding-11xs) 0 0;
 }
 .email {
   width: 102px;
@@ -123,7 +123,7 @@
   align-items: center;
   padding: 0;
 }
-.message-email {
+.email-password {
   align-self: stretch;
   border-radius: var(--br-9xs);
   border: 1.3px solid var(--color-darkslategray-100);
@@ -132,116 +132,85 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 7px 4px 9px;
+  padding: 7px 4px var(--padding-4xs);
   gap: 10.5px;
   cursor: pointer;
-}
-.password {
-  position: relative;
-  font-weight: 500;
-  display: inline-block;
-  min-width: 69px;
-}
-.iconlylightpassword,
-.lock-icon {
-  position: absolute;
-  margin: 0 !important;
-}
-.lock-icon {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  z-index: 1;
 }
 .iconlylightpassword {
   height: 24px;
   width: 24px;
-  top: calc(50% - 12px);
-  left: -23.5px;
-  z-index: 2;
+  position: relative;
+  min-height: 24px;
 }
-.password-parent {
-  margin-top: -38px;
+.email-input,
+.email-input-child,
+.input-fields {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 38px 13px;
-  position: relative;
-  flex-shrink: 0;
 }
-.password-hide-and-see {
-  margin: 0;
-  height: 20px;
-  width: 20px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
+.email-input-child {
+  width: 69px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 22px;
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  font-family: var(--font-athiti);
+  font-weight: 500;
+  font-size: var(--paragraph-2-regular-size);
+  color: rgba(50, 50, 50, 0.5);
 }
-.input-fields,
-.message-email1 {
+.email-input,
+.input-fields {
   align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
-.message-email1 {
-  height: 42px;
+.email-input {
   border-radius: var(--br-9xs);
   border: 1.3px solid var(--color-darkslategray-100);
-  box-sizing: border-box;
   overflow: hidden;
-  flex-shrink: 0;
   flex-direction: row;
-  padding: var(--padding-3xs) 26px 12px;
-  gap: 221px;
+  padding: 6px var(--padding-11xs) 8px;
+  gap: 12.5px;
 }
 .input-fields {
   flex-direction: column;
-  gap: var(--gap-base);
+  gap: 16px;
 }
 .recover-password {
   position: relative;
-  font-family: var(--paragraph-2-regular);
-  color: var(--color-indianred-100);
-  text-align: center;
   display: inline-block;
   min-width: 123px;
   cursor: pointer;
 }
-.input-fields-parent {
+.recover-password-wrapper {
   align-self: stretch;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 12px;
-  text-align: left;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
   font-size: var(--paragraph-2-regular-size);
-  color: rgba(50, 50, 50, 0.5);
-  font-family: var(--font-athiti);
+  color: var(--color-indianred-100);
+  font-family: var(--paragraph-2-regular);
 }
-.frame-group,
-.login-form-container {
+.login-form,
+.login-form-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame-group {
+.login-form {
   flex: 1;
   flex-direction: column;
-  gap: 33px;
+  gap: var(--gap-5xl);
 }
-.login-form-container {
+.login-form-wrapper {
   align-self: stretch;
   flex-direction: row;
-  padding: 0 var(--padding-sm) var(--padding-7xs-5);
+  padding: 0 var(--padding-sm);
   font-size: var(--font-size-base);
   color: #313639;
 }
@@ -257,10 +226,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 58px var(--padding-7xs-5);
-  font-size: var(--paragraph-2-regular-size);
-  color: #8b8d97;
-  font-family: var(--paragraph-2-regular);
+  padding: 0 58px;
 }
 .login1 {
   flex: 1;
@@ -271,17 +237,10 @@
   color: var(--color-white);
   text-align: center;
 }
-.buttons,
-.container,
-.login {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .buttons {
   cursor: pointer;
   border: 0;
-  padding: 10.5px 16px;
+  padding: var(--padding-2xs-5) 16px;
   background-color: var(--color-indianred-100);
   align-self: stretch;
   border-radius: var(--br-xs);
@@ -289,6 +248,22 @@
 }
 .buttons:hover {
   background-color: #e86161;
+}
+.buttons,
+.container,
+.frame-group,
+.login {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-group {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  font-size: var(--paragraph-2-regular-size);
+  color: #8b8d97;
+  font-family: var(--paragraph-2-regular);
 }
 .container,
 .login {
@@ -300,8 +275,8 @@
   border-radius: var(--br-xs);
   background-color: var(--color-white);
   flex-direction: column;
-  padding: 87.5px 34px 86px;
-  gap: 34.5px;
+  padding: 97.5px 34px 96px;
+  gap: var(--gap-5xl);
   max-width: 100%;
 }
 .login {
@@ -338,8 +313,8 @@
     box-sizing: border-box;
   }
   .container {
-    padding-top: 57px;
-    padding-bottom: 56px;
+    padding-top: 63px;
+    padding-bottom: var(--padding-43xl);
   }
   .login {
     padding-left: var(--padding-105xl);
@@ -352,25 +327,8 @@
     font-size: var(--font-size-lgi);
   }
   .container-inner,
-  .welcome-back-login-to-your-ac-wrapper {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .message-email1 {
-    gap: 110px;
-  }
-  .frame-group {
-    gap: var(--gap-base);
-  }
-  .dont-have-an-account-sign-up-wrapper {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .container {
-    gap: 17px;
-  }
+  .dont-have-an-account-sign-up-wrapper,
+  .form-title,
   .login {
     padding-left: var(--padding-xl);
     padding-right: var(--padding-xl);
